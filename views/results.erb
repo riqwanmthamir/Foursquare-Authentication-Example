@@ -1,0 +1,11 @@
+
+<h1>Search Results</h1>
+
+<% @query.each do |venue| %>
+	<% if venue["location"]["formattedAddress"].count > 2 %>
+	<h2><%= venue["name"] %></h2>
+		<% venue["location"]["formattedAddress"].each do |line| %>
+			<p><%= line %></p>
+		<% end %>
+	<% end %>
+<% end %>

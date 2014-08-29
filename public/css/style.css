@@ -1,0 +1,192 @@
+body {
+  padding-top: 80px;
+  background: #f9f9f9;
+  font-size: 16px;
+}
+
+a {
+  color: #f57c00;
+}
+
+a:hover {
+  color: #bf360c;
+  text-decoration: none;
+}
+
+.logout {
+	display: block;
+	float: right;
+	padding: 15px;
+	background: white;
+}
+
+
+.inner {
+  padding: 10px;
+}
+
+.auth-form {
+	max-width: 330px;
+	margin: 0 auto;
+}
+
+.form-title {
+  width: 25%;
+}
+
+.form-textarea {
+  width: 50%;
+}
+
+.post-list {
+  min-height: 300px;
+}
+
+.blog-icons {
+  max-height: 18px;
+  margin-right: 5px;
+}
+
+.btn-primary {
+  background: #f57c00;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #bf360c;
+}
+
+
+.delete {
+  display: block;
+  border: none;
+  background-image: url(/img/exit.png);
+  max-height: 18px;
+  width: 18px;
+  background-size: 18px;
+  background-color: transparent;
+}
+
+.delete-form {
+  float: left;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+	color: #999; /* IE8 proofing */
+	color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+.footer {
+	position: relative;
+	width: 100%;
+	background-color: #009688;
+	margin-top: 50px;
+}
+
+.text-muted {
+	color: #fff;
+	padding: 15px 0;
+	margin: 0;
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+  	background: #009688;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0px 5px 0px;  
+    z-index: 999;
+  }
+
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+}

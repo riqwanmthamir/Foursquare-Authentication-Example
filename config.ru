@@ -1,0 +1,2 @@
+require './foursquare'
+run Foursquare
